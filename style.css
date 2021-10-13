@@ -192,7 +192,7 @@ video {
         content: '';
         position: absolute;
         left:0;
-        width: 50px;
+        width: 330px;
         height: 7px;
         background-color: honeydew;
         border-radius: 15px;
@@ -202,7 +202,7 @@ video {
         content: '';
         position: absolute;
         right:0;
-        width: calc(100% - 100px);
+        width: calc(100% - 360px);
         height: 7px;
         background-color: honeydew;
         border-radius: 15px;
@@ -234,7 +234,7 @@ video {
 .border1 {display: inline-block;
        
                 border-bottom: red solid 2px;}
-.border1 h4 {margin-bottom: 8px;
+.border1 h4 {margin-bottom: 4px;
         font-size: 25px;
         
         text-transform: capitalize;}
@@ -249,7 +249,8 @@ video {
         color: rgb(161, 155, 155);
         text-transform: capitalize;
         text-decoration: underline;}
-.blackbox {
+.blackbox {position: relative;
+        z-index: 1;
         width: 18%;
         text-align: center;
         background-color: black;
@@ -258,6 +259,30 @@ video {
         border: black solid 1px;
         transition:all 0.5s ease ;
 }
+.blackbox:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        border: 1px solid rgb(13, 14, 13);
+        top: -5px;
+        left: -5px;
+        z-index: 0;
+        height: 100%;
+}
+
+.blackbox:after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        border: 1px solid rgb(15, 14, 14);
+        bottom: -5px;
+        right: -5px;
+
+        height: 100%;
+}
+
+
+
 .blackbox:hover {
         background: white;
         color: black;}
