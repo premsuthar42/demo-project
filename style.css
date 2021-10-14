@@ -375,7 +375,7 @@ padding-top: 30px;}
         top: 50%;
         transform: translateY(-50%);
        
-        opacity: 0;
+        opacity: 0.4;
         /* height: 100%; */
         left: 0;
         right: 0;
@@ -558,7 +558,7 @@ padding-top: 30px;}
         padding: 0px 205px 0px 40px;}
 .partners p {
         margin-top: 10px;
-        padding: 10px 40px 15px 40px;
+        padding: 0px 40px;
         font-size: 20px;
         line-height: 29px;}
 .box12 {
@@ -853,7 +853,13 @@ bottom: -90px;}
 
 
 @media (max-width: 768px)
-{ .box8 {width: 50%;}
+
+
+{ .bannertext h1 {font-size: 38px;}
+  .bannertext p {font-size: 17px;}
+        
+       .logobox > img {height: 60px;} 
+        .box8 {width: 50%;}
         .logobox {width: 49%;}
 .imgtext1{bottom: 60px;}
 .boxxxx {font-size: 10px;}
@@ -868,8 +874,8 @@ padding: 0px;
 .valuebox p {font-size: 15px;
 padding: 0px;}
 .partners {width: 100%;
-margin: 0px;
-padding: 15px;}
+margin: 0px 0px 12px;
+padding: 5px 17px;}
 .partners2 {margin: 0px;
 padding: 0%;
 width: 100%;}
