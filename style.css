@@ -5,14 +5,16 @@ body {
  img{max-width: 100%;}        
 ol {margin: 0%;
 padding: 0%;}        
-.wrapper1{position: relative;
+.wrapper1{
         position: fixed;
         top: 0%;
         left: 0%;
         right: 0%;
-        z-index: 1;
-        background-color: rgb(245, 240, 240);}
-.contain {
+        z-index: 10;
+        background-color: rgb(245, 240, 240);
+        
+}
+.contain {padding: 0px 10px;
         max-width: 1200px;
         margin: auto;}
 .logo {padding-left: 21px;
@@ -34,7 +36,7 @@ padding: 0%;}
 .text {
         display: inline-block;
         list-style: none;
-        padding: 17px 10px;
+        padding: 26px 10px;
         font-family: sans-serif;
 }
 .text > a{
@@ -73,6 +75,7 @@ padding: 0%;}
         background-color: rgb(245, 240, 240);
         display: none;
         width: 100%;
+        text-align: left;
         max-width: 100%;
 }       
 
@@ -96,7 +99,7 @@ padding: 0%;}
 .downbox4 {width: 22.8%;
         margin: 7px;
         padding-top: 17px;
-        vertical-align: middle;
+        vertical-align: top;
          /* height: 200px; */
          
          /* background-color: aqua; */
@@ -186,28 +189,9 @@ video {
         
         font-size: 75px;
         color: honeydew;
-        position: relative;
+        /* position: relative; */
 }
-.bannertext h1:before{
-        content: '';
-        position: absolute;
-        left:0;
-        width: 330px;
-        height: 7px;
-        background-color: honeydew;
-        border-radius: 15px;
-        bottom:0;
-}
-.bannertext h1:after{
-        content: '';
-        position: absolute;
-        right:0;
-        width: calc(100% - 360px);
-        height: 7px;
-        background-color: honeydew;
-        border-radius: 15px;
-        bottom:0;
-}
+
 .bannertext2 h1 {
         
         
@@ -253,15 +237,16 @@ video {
         z-index: 1;
         width: 18%;
         margin:auto;
-        transition:all 0.5s ease ;
+        
 }
 .blackbox:before {
         content: '';
         width: 100%;
         position: absolute;
-        border: 1px solid rgb(255, 14, 13);
+        border: 1px solid rgba(255, 0, 0,.3);
         top: -5px;
         left: -5px;
+        background-color: rgba(255, 0, 0,.3);ß;
         z-index: 0;
         height: 100%;
 }
@@ -270,19 +255,18 @@ video {
         content: '';
         width: 100%;
         position: absolute;
-        border: 1px solid rgb(15, 255, 14);
+        background-color: rgba(0, 0,255, 0.3);
+        border: 1px solid rgba(0,0,255,.3);
         bottom: -5px;
         right: -5px;
-
+        z-index: 0;
         height: 100%;
 }
 
 
 
-.blackbox:hover {
-        background: white;
-        color: black;}
 .blackbox h1 {
+        transition:all 0.5s ease ;
         font-size: 20px;
         margin: 10px;
         position: relative;
@@ -296,6 +280,10 @@ video {
         padding:12px 15px;
 
 }
+
+.blackbox:hover  h1{
+        background: white;
+        color: black;}
 .wrapper4 {max-width: 100%;
         text-align: center;
         background-color: rgb(230, 224, 224);
@@ -650,7 +638,7 @@ margin: 2px 0px 0px 0px;
 .content {display: inline-block;
 
 font-size:15px;
-margin: 0px 15px;
+margin: 0px 13px;
 padding-left: 30px;
 
 }
@@ -733,7 +721,7 @@ padding: 8px;
 }
 .formbox2 input {padding: 8px;
         width: 100%;}
-.botton5 {margin: 8px;
+.botton5 {margin: 5px;
         background-color: black;
         display: inline-block;
         color: rgb(245, 245, 245);
@@ -771,6 +759,10 @@ margin-right: 5px;}
 
 
 
+@media (max-width: 1199px)
+{
+        .dropdown1 {width: 29.5%;}
+}
 
 
 
@@ -794,9 +786,17 @@ margin-right: 5px;}
  .imgtext1 p {font-size: 14px;}
 }
 
+@media (max-width: 1033px)
+{
+        .text {padding: 26px 8px ;}
+}
+
+
+
+
 @media (max-width: 1020px)
 
-{.text {padding: 37px 5px;}
+{.text {padding: 26px 5px;}
 .pics {margin: 0px;}
 .imgtext1 {bottom: -110px;}
 
@@ -812,12 +812,33 @@ bottom: -90px;}
         .pics:hover .imgtext1 { bottom: 105px;}
 }
 
+@media (max-width: 915px)
+{
+        .logo {width: 130px;}
+        .topbartext {width: calc(100% - 135px);}
+        .text > a:before {border: 7px solid transparent;
+        border-top-color: rgb(185, 182, 182);
+        top:calc(50% - 5px);}
+        .text > a {padding-right: 17px;}
+        .text {padding: 16px 5px ;}
+}
+
+
+@media (max-width: 1063px)
+{
+.dropdown1 {width: 27.5%;}
+}
+
+
+
 
 @media (max-width: 810px)
 {.blackbox h1 {font-size: 15px;}
         .text {padding: 37px 5px;}
      .text a   {font-size: 15px;}
      .pics:hover .imgtext1 { bottom: 80px;}
+     .text {padding: 16px 5px ;}
+     .text a {font-size: 11px;}
 }
 
 
@@ -857,4 +878,7 @@ margin: 0%;}
 .career {padding: 15px;
 width: 100%;}
 .wrapper9 {padding: 0px;}
+.wrapper12 .form {width: 100%;
+margin: 15px 0px;}
+.botton5 {margin: 5px;}
 }
